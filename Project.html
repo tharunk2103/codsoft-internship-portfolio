@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bar Graph with Text Labels</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+  
+  :root {
+    --primary-color: #5a55f7;
+    --primary-color-dark: #090c54;
+    --secondary-color: #ca8a04;
+    --text-dark: #1f2937;
+    --text-light: #e9ebef;
+    --extra-light: #7614f6;
+    --max-width: 1200px;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f9f6f6;
+    z-index: 99;
+  }
+  nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+  }
+  nav .logo a:hover {
+    color: var(--primary-color-dark);
+  }
+  
+  nav .checkbox {
+    display: none;
+  }
+  
+  nav input {
+    display: none;
+  }
+  nav .checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+  }
+  
+  ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+  }
+  
+  ul li a:hover {
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  h1 {
+      text-align: center;
+      margin-top: 150px; /* Adjust margin as needed */
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--text-dark);
+    }
+  h3{
+    text-align: center;
+  }
+  .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Adjust the gap between images */
+      margin-top: 20px; /* Adjust margin as needed */
+    }
+
+    .image-container img {
+      max-width: 100%; /* Ensure images don't exceed their container width */
+      max-height: 300px; /* Limit the height of the images */
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <nav>
+                <div class="nav__content">
+                  <div class="logo"><a href="#">Tharun Kumar</a></div>
+                  <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                  </label>
+                  <input type="checkbox" name="check" id="check" />
+                  <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+      </nav>
+
+  <h1>PROJECT-WEB DEVELOPMENT</h1>
+  <h3>MANAGEMENT WEBSITES
+  </h3>
+  <p>It is an Proto version of the basic Management Website which contains the structure of my perspective and imagination.In this there are registration and management pages and also a product based website.<div class="image-container">
+    <img src="proj1.png" alt="event management home">
+    <img src="proj2.png" alt="registration">
+    <img src="proj3.png" alt="restaurant menu">
+    <img src="proj4.png" alt="perfume company">
+  </div>
+</body>
+</html>
